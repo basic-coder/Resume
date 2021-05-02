@@ -1,0 +1,544 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+}
+body{
+    overflow-x: hidden;
+}
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.left-container{
+    width: 35%;
+    height: 240vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border: 10px solid purple;
+    background: linear-gradient(to top, rgb(167, 10, 167) 60%, rgb(31, 31, 190));
+}
+.right-container{
+    width: 65%;
+    height: 240vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border: 10px solid purple;
+}
+.heading{
+    height: 500px;
+    width: 70%;
+    display: flex;
+    justify-content: center;
+    text-align:left;
+    flex-direction: column;
+    padding-left: 10%;
+    padding-top: 2px;
+}
+.heading h1{
+    font-size: 4em;
+    font-weight: 100;
+    color: rgb(233, 218, 218);
+}
+.heading h2{
+    font-size: 4em;
+    font-weight: 700;
+    color: rgb(233, 218, 218);
+}
+.heading .sub-text{
+    font-size: 1.5em;
+    font-weight: 400;
+    color: rgb(233, 218, 218);
+}
+.about-me{
+    height: 350px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 10px;
+    backdrop-filter: blur(15px);
+    box-shadow: 0 -10px 10px rgba(0,0,0,0.1);
+    border: 1px solid rgba(255,255,255,0.2);
+    padding: 3.2em;
+    border-radius: 10px;
+}
+.about-me img{
+    position: absolute;
+    border-radius: 50%;
+    width: 185px;
+    height: 180px;
+    top: -20%;
+    border: 3px solid white;
+}
+.about-me .about-head{
+    font-size: 1.5em;
+    color: #fff;
+    font-weight: 700;
+    margin: 20px;
+}
+.about-me p{
+    font-size: 1em;
+    color: #fff;
+    font-weight: 100;
+    line-height: 1.37em;
+}
+.link-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+}
+.link-container .social{
+    height: 60px;
+    margin: 20px;
+    display: flex;
+    backdrop-filter: blur(15px);
+    box-shadow: 0 -10px 10px rgba(0,0,0,0.1);
+    border: 1px solid rgba(255,255,255,0.2);
+    border-radius: 50px;
+    justify-content: center;
+    align-items: center;
+    padding-left: 50px;
+    padding-right: 50px;
+    color: white;
+    font-size: 1.2em;
+}
+.link-container .social h2{
+    margin-left: 40px;
+    font-size: 1.2em;
+    font-weight: 100;
+}
+.languages{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 30px;
+    padding-bottom: 30px;
+}
+.languages h2{
+    margin: 20px;
+    font-size: 2em;
+    color: #fff;
+    font-weight: 500;
+}
+.languages-content{
+    width: 100%;
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.languages-content .name-container{
+    width: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.1em;
+    line-height: 1.37em;
+    color: #fff;
+    font-weight: 300;
+    flex-direction: column;
+}
+.languages-content h5{
+    margin: 15px;
+    margin-right: 30px;
+}
+.languages-content .scores{
+    width: 70%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    font-size: 0.8em;
+    color: #fff;
+    font-weight: 100;
+}
+.languages-content .scores h1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.circle{
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    background: #fff;
+    margin: 10px;
+}
+.empty{
+    background: transparent;
+    border: 2px solid #fff;
+}
+
+.right-container .education{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 50px;
+    padding-left: 5%;
+    padding-right: 5%;
+    position: relative;
+    border-top: 5px solid purple;
+}
+
+.right-container .education h2{
+    position: absolute;
+    display: flex;
+    left: 0;
+    top:-6%;
+    justify-content: center;
+    align-items: center;
+    font-size: 1em;
+    font-weight: 700;
+    color: #fff;
+    background: purple;
+    padding-right: 100px;
+    padding-left: 20px;
+    padding-top:8px ;
+    padding-bottom: 8px;
+    border-radius: 50px;
+}
+.education p{
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+.education p:nth-child(2){
+    margin-top: 10%;
+    margin-bottom: 0%;
+}
+
+.right-container .experience{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 50px;
+    margin-top: 0;
+    padding-left: 5%;
+    padding-right: 5%;
+    position: relative;
+    border-top: 5px solid purple;
+}
+
+.right-container .experience h2{
+    position: absolute;
+    display: flex;
+    left: 0;
+    top:-6%;
+    justify-content: center;
+    align-items: center;
+    font-size: 1em;
+    font-weight: 700;
+    color: #fff;
+    background: purple;
+    padding-right: 100px;
+    padding-left: 20px;
+    padding-top:8px ;
+    padding-bottom: 8px;
+    border-radius: 50px;
+}
+.experience p{
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+.experience p:nth-child(2){
+    margin-top: 10%;
+    margin-bottom: 0%;
+}
+.right-container .skills{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 50px;
+    margin-top: 0;
+    padding-left: 5%;
+    padding-right: 5%;
+    position: relative;
+    border-top: 5px solid purple;
+}
+.right-container .skills .head{
+    position: absolute;
+    display: flex;
+    left: 0;
+    top:-3.5%;
+    justify-content: center;
+    align-items: center;
+    font-size: 1em;
+    font-weight: 700;
+    color: #fff;
+    background: purple;
+    padding-right: 100px;
+    padding-left: 20px;
+    padding-top:8px ;
+    padding-bottom: 8px;
+    border-radius: 50px;
+}
+.skills .main-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.skills .main-box .box{
+    width: 50%;
+    height: 280px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.skills .main-box .box .circle{
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 8px solid purple;
+}
+.circle-image1{
+    background: url(1.png);
+    background-position: center;
+    background-size: 100px 100px;
+    background-repeat: no-repeat;
+}
+.circle-image2{
+    background: url(2.png);
+    background-position: center;
+    background-size: 100px 100px;
+    background-repeat: no-repeat;
+}
+.circle-image3{
+    background: url(4.png);
+    background-position: center;
+    background-size: 100px 100px;
+    background-repeat: no-repeat;
+}
+.circle-image4{
+    background: url(3.png);
+    background-position: center;
+    background-size: 100px 100px;
+    background-repeat: no-repeat;
+}
+.skills .main-box .box h2{
+    margin-top: 8px;
+}
+.right-container .hobbies{
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 0;
+    margin-top: 0;
+    padding-left: 5%;
+    padding-right: 5%;
+    position: relative;
+    border-top: 5px solid purple;
+}
+.right-container .hobbies .head{
+    position: absolute;
+    display: flex;
+    left: 0;
+    top:-6%;
+    justify-content: center;
+    align-items: center;
+    font-size: 1em;
+    font-weight: 700;
+    color: #fff;
+    background: purple;
+    padding-right: 100px;
+    padding-left: 20px;
+    padding-top:8px ;
+    padding-bottom: 8px;
+    border-radius: 50px;
+}
+.hobbies .main-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+.hobbies .main-box .box{
+   width: 25%;
+   margin: 2px;
+   height: 200px;
+   margin-top: 70px; 
+}
+.hobbies .main-box .box i{
+    font-size: 4em;
+    color: gray;
+}
+.hobbies .main-box .box h2{
+    font-size: 1em;
+    margin-top: 30px;
+    color: gray;
+}
+
+@media (max-width:1024px){
+    .left-container{
+        height: 170vh;
+    }
+    .right-container{
+        height: 170vh;
+    }
+    .heading{
+        height: 300px;
+    }
+    .heading h1{
+        font-size: 2.5em;
+    }
+    .heading h2{
+        font-size: 2.5em;
+    }
+    .heading .sub-text{
+        font-size: 1em;
+    }
+    .about-me{
+        height: 250px;
+        padding: 4%;
+    }
+    .about-me img{
+        height: 100px;
+        width: 100px;
+    }
+    .about-me .about-head{
+        font-size: 1em;
+        margin-top: 80px;
+    }
+    .about-me p{
+        font-size: 0.8em;
+    }
+    .link-container .social{
+        font-size: 1em;
+        padding-left:20px ;
+        padding-right: 20px;
+        height: 40px;
+    }
+    .link-container .social h2{
+        font-size: 1em;
+    }
+    .languages h2{
+        font-size: 1.5em;
+    }
+    .languages-content .name-container{
+        width: 25%;
+        align-items: flex-start;
+    }
+    .name-container h5{
+        font-size: 0.8em;
+        line-height: 0.7em;
+    }
+    .scores .circle{
+        height: 15px;
+        width: 15px;
+    }
+    .skills .main-box .box .circle {
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+        border: 8px solid purple;
+    }
+    .right-container .education h2{
+        font-size: 0.8em;
+        top: -8%;
+    }
+    .right-container .education p{
+        font-size: 0.7em;
+    }
+    .right-container .experience h2{
+        font-size: 0.8em;
+        top: -8%;
+    }
+    .right-container .experience p{
+        font-size: 0.7em;
+    }
+    .skills .main-box .box{
+        height: 190px;
+        margin-top:20px ;
+    }
+    .skills .main-box h2{
+        color: purple;
+        font-size: 1.2em;
+    }
+    .hobbies .main-box .box{
+        font-size: 0.8em;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+    .right-container .hobbies{
+        width: 70%;
+    }
+}
+@media (max-width:680px){
+    .container{
+        flex-direction: column;
+        width: 100%;
+    }
+    .left-container{
+        height: 160vh;
+        width: 100%;
+        border: none;
+    }
+    .right-container{
+        height: 180vh;
+        width: 100%;
+        border: none;
+    }
+    .heading{
+        height: 300px;
+    }
+    .heading h1{
+        font-size: 2.5em;
+        width: 50%;
+    }
+    .heading h2{
+        font-size: 2.5em;
+        width: 50%;
+    }
+    .heading .sub-text{
+        font-size: 1em;
+        width: 50%;
+    }
+    .about-me{
+        height: 250px;
+        padding: 4%;
+    }
+    .about-me img{
+        height: 120px;
+        width: 120px;
+    }
+    .about-me .about-head{
+        font-size: 1.4em;
+        margin-top: 80px;
+    }
+    .about-me p{
+        font-size: 1em;
+    }
+    .link-container .social{
+        font-size: 1em;
+        padding-left:50px ;
+        padding-right: 50px;
+        height: 50px;
+    }
+}
+@media (max-width:410px){
+    .left-container{
+        height: 180vh;
+    }
+    .right-container{
+        height: 220vh;
+    }
+    .right-container .skills{
+        padding: 0;
+    }
+}
